@@ -1,0 +1,103 @@
+https://www.terraform.io/downloads.html
+
+unzip terraform_0.11.8_linux_amd64.zip   
+cp terraform /usr/bin/ 
+terraform providers
+
+The following command is to intialize the plugin installation for the required providers
+
+https://www.terraform.io/docs/providers/index.html
+
+terraform init >> Initialise the Terraform and it will download the providers plugin
+terraform plan >> complie
+terraform validate  >> Validate any error
+terraform destory >> to destory everything which is created on this terraform script 
+terraform apply  >> To execute and apply
+terraform fmt  >> To format the Script
+
+Ex:-- 
+Create a user testuser. 
+Create a group newadmins. 
+Make testuser member of newadmins.
+Assign administrative previlege to newadmins group. 
+
+# This is my first ever Terraform script
+provider "aws" {
+
+         access_key = "AKIAJYXAL24GXOHWLLRA"
+         secret_key = "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"
+         region     = "us-east-2"
+
+}
+
+resource "aws_iam_user" "Creatingnewuser" {
+           name = "testuser"
+}
+
+resource "aws_iam_group" "creatingadmingroup" {
+  name = "newadmins"
+}
+resource "aws_iam_group_membership" "team" {
+  name = "addingmemberstonewadmins"
+
+  users = ["testuser"]
+
+  group = "newadmins"
+
+}
+resource "aws_iam_group_policy_attachment" "Administrativepolicy" {
+  group      = "newadmins"
+  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
+}
+
+
+
+Ex 2: Create a new directory at your root home exc1. set up terraform with provider aws. ti should create a s3 bucket in us-east-1 region
+
+provider "aws" {
+
+         access_key = "AKIAJYXAL24GXOHWLLRA"
+         secret_key = "b4+ZDGVINmLBtCIcuD+jZDRhWnMBkX+W9/FCbKO/"
+         region     = "us-east-2"
+
+}
+resource "aws_s3_bucket" "newbucket" {
+  bucket = "logifirstbucket"
+   region = "us-east-1"
+}
+
+
+
+Ex 3: Create an instance 
+# This is my first ever Terraform script
+
+variable "regionofoperation" {
+  default = "us-east-2"
+}
+
+variable "myami" {
+  default = "ami-0b59bfac6be064b78"
+}
+
+variable "instancetype" {}
+
+provider "aws" {
+  access_key = "AKIAJYXAL24GXOHWLLRA"
+  secret_key = "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"
+  region     = "${var.regionofoperation}"
+}
+
+resource "aws-instance" "firstone" {
+  ami           = "${var.myami}"
+  instance_type = "${var.instancetype}"
+}
+
+
+
+Ex:-- 
+Create a new vpc with CIDR 10.0.0.0/16. 
+Create two subnets in it with CIDR 10.0.1.0/24 and 10.0.2.0/24. 
+Make one of the subnets public subnet and keep of the subnet as private subnet. 
+Create a security group allowing port 80. 
+
+
