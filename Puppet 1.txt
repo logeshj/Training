@@ -1,0 +1,31 @@
+https://docs.puppet.com/
+
+
+https://puppet.com/docs/puppet/5.3/index.html
+
+https://puppet.com/docs/puppet/5.3/config_file_main.html
+
+node default { user { 'resource title':
+  name                 => Testuser
+  password             => Swissre8
+  uid                  => 1050
+  ensure               => present
+}
+}
+
+
+Preparing to install into /etc/puppetlabs/code/environments/production/modules ...
+    Notice: Downloading from http://forgeapi.puppetlabs.com ...
+    Notice: Installing -- do not interrupt ...
+    /etc/puppetlabs/code/environments/production/modules
+    +-- puppetlabs-apache (v1.1.1)
+
+
+
+http://rspec-puppet.com/
+
+https://puppet.com/blog/unit-testing-rspec-puppet-for-beginners
+
+Ex:-- Create a role applicationserver & two profile installtomcat8 and servicetomcat8. Write a module tomcat8 with two manifests install.pp and service.pp. Assign the role to node2 and deploy the tomcat8
+
+https://www.loggly.com/docs/puppet-deployment-and-logs/

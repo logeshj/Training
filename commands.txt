@@ -1,0 +1,23 @@
+Sudo i
+which git
+apt-get update
+apt-get install git
+git
+clear
+mkdir mycode
+ping google.com
+cd mycode/
+git
+git init
+cd .git
+git config --global user.name "Logesh"
+git config --global user.email "log0712@yahoo.in"
+history
+touch hello.txt
+git status
+git add *
+git status
+git log
+git commit -m "Commit Comments"
+git log
+

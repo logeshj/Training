@@ -1,0 +1,275 @@
+https://jenkins.io/doc/book/installing/
+
+
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
+
+http://192.168.56.102:8080/job/remotejob/build?token=lifeguide
+
+
+
+usermod -a -G root jenkins
+
+
+https://github.com/logeshj/maven.git
+
+https://jenkins.io/doc/pipeline/steps/workflow-cps/
+
+hostnamectl set-hostname jenkins
+    2  exec bash
+    3  /var/lib/jenkins/secrets/initialAdminPassword
+    4  cat /var/lib/jenkins/secrets/initialAdminPassword
+    5  clear
+    6  service jenkins status
+    7  clear
+    8  nano /etc/default/jenkins
+    9  cat /etc/passwd
+   10  cat /etc/passwd | grep jenkins
+   11  clear
+   12  cat /etc/passwd | grep jenkins
+   13  cd /var/lib/jenkins/
+   14  lsd
+   15  ls
+   16  clear
+   17  ls
+   18  cat config.xml
+   19  nano config.xml
+   20  clear
+   21  ls
+   22  clear
+   23  root@puppetnode1:~# facter uuid
+   24  33ACECFA-6CF7-475C-A2DA-97F8B9A54BF0
+   25  clear
+   26  apt-get update
+   27  which java
+   28  apt-get install default-jre
+   29  apt-get update
+   30  which java
+   31  clear
+   32  apt-get install default-jdk
+   33  which java
+   34  clear
+   35  apt-get update
+   36  clear
+   37  hisotry
+   38  history
+   39  clear
+   40  wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+   41  wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add
+   42  sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   43  sudo apt-get update
+   44  cat /etc/apt/sources.list.d/jenkins.list
+   45  sudo apt-get install jenkins
+   46  clear
+   47  apt-get update
+   48  sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   49  apt-get update
+   50  wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | apt-key add -
+   51  sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+   52  apt-get install jenkins
+   53  clear
+   54  apt-get update
+   55  clear
+   56  apt-get upgrade
+   57  clear
+   58  apt-get update
+   59  clear
+   60  cd /var/lib/jenkins/
+   61  ls
+   62  clear
+   63  pwd
+   64  cd
+   65  ls
+   66  clear
+   67  cd /root/cts/Downloads
+   68  cd /home/cts/Downloads/
+   69  ls
+   70  mv jenkins-cli.jar  ~
+   71  ls
+   72  cd
+   73  ls
+   74  java -jar jenkins-cli.jar -s http://192.168.56.102:8080/ restart
+   75  java -jar jenkins-cli.jar -s http://192.168.56.102:8080/ -auth admin:11d8ca98852bf9b9c24e90648d64a4cbe6 restart
+   76  cd :/var/lib/jenkins/workspace/developerproject-2
+   77  cd /var/lib/jenkins/workspace/developerproject-2
+   78  clear
+   79  cd ..
+   80  ls
+   81  cd javacode/
+   82  ls
+   83  cat fibonacci.class
+   84  clear
+   85  cd java-code/
+   86  ls
+   87  cd ..
+   88  clea
+   89  clear
+   90  clear
+   91  la
+   92  ls
+   93  cd /var
+   94  ls
+   95  cd
+   96  clear
+   97  cd /var/lib/jenkins/workspace
+   98  ls
+   99  clear
+  100  cd developerproject-2/
+  101  ls
+  102  cat Buildresult.txt
+  103  cd
+  104  public class Fibonacci {
+  105  }clear
+  106  clear
+  107  mkdir javacode
+  108  cd javacode/
+  109  nano fibonacci.java
+  110  cat fibonacci.java
+  111  clear
+  112  git init
+  113  apt-get install git
+  114  clear
+  115  git init
+  116  git config --global user.name "abc"
+  117  git config --global user.email "abc@gmail.com"
+  118  git add *
+  119  git commit -m "first"
+  120  git remote add origin https://github.com/logeshj/java-code.git
+  121  git push origin master
+  122  git remote add origin https://github.com/logeshj/java-code.git
+  123  git push origin master
+  124  clear
+  125  ls
+  126  cd ..
+  127  ls
+  128  cd javacode/
+  129  clear
+  130  history
+  131  clear
+  132  history
+  133  clear
+  134  ls
+  135  mkdir python
+  136  cd python/
+  137  ls
+  138  nano python
+  139  mv python python.py
+  140  ls
+  141  cat python.py
+  142  history
+  115  git init
+  116  git config --global user.name "abc"
+  117  git config --global user.email "abc@gmail.com"
+  118  git add *
+  119  git commit -m "second"
+  120  git remote add origin https://github.com/logeshj/python.git
+  121  git push origin master
+  122  git remote add origin https://github.com/logeshj/python.git
+mkdir python
+  136  cd python/
+  137  ls
+  138  nano python
+  139  mv python python.py
+  140  ls
+  141  cat python.py
+  142  history
+  143  git add *
+  144  git init
+  145  git config --global user.name "abc"
+  146  git config --global user.email "abc@gmail.com"
+  147  git add *
+  148  git commit -m "first"
+  149  git remote add origin https://github.com/logeshj/java-code.git
+  150  git push origin master
+  151  git push --help
+  152  git push origin master
+  153  git add *
+  154  git remote add origin https://github.com/logeshj/python.git
+  155  git push origin master
+  156  git pull
+  157  git pull master
+  158  clear
+  159  git push origin master
+  160  git init
+  161  git config --global user.name "abc"
+  162  git config --global user.email "abc@gmail.com"
+  163  git add *
+  164  git commit -m "second"
+  165  git push origin master
+  166  git init
+  167  git add README.md
+  168  git commit -m "first commit"
+  169  git remote add origin https://github.com/logeshj/python.git
+  170  git push -u origin masterclear
+  171  clear
+  172  git init
+  173  git add README.md
+  174  git commit -m "first commit"
+  175  git remote add origin https://github.com/logeshj/python.git
+  176  git push -u origin master
+  177  clear
+  178  git remote add origin https://github.com/logeshj/python.git
+  179  git push -u origin master
+  180  ls
+  181  mv python.py ~
+  182  ls
+  183  cd
+  184  ls
+  185  rm -rf python
+  186  ls
+  187  mkdir python
+  188  mv python.py /python
+  189  ls
+  190  cd python/
+  191  ls
+  192  cd /python
+  193  ls
+  194  clear
+  195  nano python.py
+  196  git init
+  197  git config --global user.name "abc"
+  198  git config --global user.email "abc@gmail.com"
+  199  git add *
+  200  git commit -m "first"
+  201  git remote add origin https://github.com/logeshj/python.git
+  202  git push -u origin master
+  203  clear
+  204  cd ..
+  205  apt-get install tomcat8
+  206  apt-get install tomcat7
+  207  service tomcat7 status
+  208  service tomcat7 restart
+  209  systemctl status tomcat7
+  210  apt-get remove tomcat8
+  211  systemctl status tomcat7
+  212  clear
+  213  cd /var/lib/tomcat7/conf
+  214  ls
+  215  nano tomcat-users.xml
+  216  cat tomcat-users.xml
+  217  clear
+  218  cat tomcat-users.xml
+  219  nano /etc/default/jenkins
+  220  cat /etc/default/jenkins
+  221  service jenkins restart
+  222  clear
+  223  systemctl restart tomcat7
+  224  cd
+  225  wget -d https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
+  226  ls
+  227  cp sample.war /var/lib/jenkins/workspace/Sample-deployment-job/
+  228  cd /var/lib/jenkins/workspace/Sample-deployment-job
+  229  ls
+  230  clear
+  231  ls
+  232  clear
+  233  usermod -a -G sudo jenkins
+  234  cat /etc/passwd
+  235  clear
+  236  usermod -a -G root jenkins
+  237  clear
+  238  usermod -a -G tomcat7 jenkins
+  239  service jenkins restart
+  240  systemctl tomcat7 restart
+  241  systemctl restart tomcat7
+
+/var/lib/jenkins/workspace/Sample-deployment-job# 

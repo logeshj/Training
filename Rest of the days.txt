@@ -1,0 +1,13 @@
+https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz
+
+
+https://docs.google.com/document/d/1e6vHPeoHVN64GpkU0JMYSh9AXvUjmwPL6jBvgNPDlbk/edit
+
+chef-server-ctl install opscode-reporting
+
+
+openssl passwd -1
+Password:Verifying - Password:$1$3JUKmV3R$vZVeb51f1t6QZUecwuRHX0
+
+https://cognizanttraining.webex.com/mw3200/mywebex/default.do?service=7&main_url=%2Ftc3200%2Ftrainingcenter%2Fdefault.do%3Fsiteurl%3Dcognizanttraining%26main_url%3D%252Ftc3200%252Fe.do%253FAT%253DMI%2526%2526Host%253DQUhTSwAAAAQL9178VUUfqupaj55IcNEfLFP4JyIPxXRYOIvve_00gZOMG04toBCghnd42UTqHpX74vQH7yG7VvtZhKyo6VHgw5e8GaGVyqDqUF2ejzaynau8RaHuKE65FK6ojycLDq81%2526UID%253D3032028623%2526MTID%253Dt8ab5e8fb062bd74a46c7830e8ed538b8%2526siteurl%253Dcognizanttraining%2526confID%253D105480387387508260%2526ticket%253D4832534b000000043c48af9ebad164403f233f555dc6d252045a11aa00a0363d012909685c9ee3cd&siteurl=cognizanttraining
+

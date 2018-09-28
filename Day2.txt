@@ -1,0 +1,61 @@
+ssh ansiblenode1
+2 ssh-keygen
+3 clear
+4 cd .ssh/
+5 ls
+6 ssh-copy-id -i id_rsa.pub ansible@ansiblenode1
+7 ssh ansiblenode1
+8 clear
+9 history
+ssh ansiblenode1
+2 ssh-keygen
+3 clear
+4 cd .ssh/
+5 ls
+6 ssh-copy-id -i id_rsa.pub ansible@ansiblenode1
+7 ssh ansiblenode1
+8 clear
+9 history
+
+sudo apt-get update
+13 sudo apt-get install software-properties-common
+14 reboot
+15 sudo reboot
+16 sudo apt-get install software-properties-common
+17 sudo apt-add-repository ppa:ansible/ansible
+18 sudo apt-get update
+19 sudo apt-get install ansible
+20 clear
+21 ansible
+22 clear
+23 ansible --version
+
+ansible allmachines -b -m cron -a "name=hello user=root minute=* hour=* day=* month=* job='echo HELLO'"
+
+ansible allmachines -b -m user -a "name=testuser uid=1050 shell=/bin/bash create_home=yes groups=sudo"
+
+hosts: all
+become: yes
+tasks:
+name: Install apache2
+apt: name=apache2 state=present
+name: Make Apache2 running and enabled
+service: name=apache2 state=started enabled=yes
+name: Display Name on Apache web page
+copy: content="Lakshminarayanan" dest=/var/www/index.html
+
+-hosts: ansiblenode1
+become: yes
+gahter_facts: no
+vars: 
+- var1:varibale1
+- var2:variable2
+tasks: 
+ -name: task1
+shell: echo var1>one.txt
+ -name: task2
+shell: echo "value of {{var2}}>two.txt
+
+https://docs.ansible.com/ansible/latest/modules/list_of_all_modules.html
+
+--become-method=BECOME_METHOD. privilege escalation method to use (default=sudo), valid choices: [ sudo | su | pbrun | pfexec | doas | dzdo | ksu ]

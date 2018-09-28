@@ -1,0 +1,29 @@
+
+https://puppet.com/docs/pe/2017.3/installing_pe.html
+
+27  service puppetserver status   
+28  cd /opt/   
+29  ls  
+30  cd puppetlabs/   
+31  cd /etc/default/
+55  nano puppetserver 
+57  service puppetserver start  (or) puppet resource service puppetserver ensure=running
+59  puppet  
+62  cd /opt/puppetlabs/bin/ 
+67  ./puppet   
+68  echo $PATH   
+69  export PATH=$PATH:/opt/puppetlabs/bin 
+70  puppet
+74  puppet help 
+
+puppet resource user  
+
+puppet resource service
+
+ puppet resource user demouser ensure=present  
+
+  puppet parser validate site.pp  
+
+puppet-lint site.pp  
+
+ puppet apply site.pp --noop  
